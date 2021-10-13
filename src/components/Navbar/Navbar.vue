@@ -3,7 +3,6 @@
     <div class="nav__logo">
       <div class="nav__logo-home">
         <img src="@/assets/logo.png" alt="">
-        <a href="">metting</a>
       </div>
       <div class="menu__btn" :class="{ 'active' : this.isOpen  }" @click="this.isOpen = !this.isOpen">
         <div class="menu__btn-block">
@@ -13,11 +12,11 @@
     </div>
     <div class="nav__links" :class="{ 'open' : this.isOpen }">
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Feature</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">Solution</a></li>
-        <li><a href="">Faq</a></li>
+        <li><a href="">О сервисе</a></li>
+        <li><a href="">Преимущества</a></li>
+        <li><a href="">Как использовать</a></li>
+        <li><a href="">IProBonus</a></li>
+        <li><a href="">Другие сервисы</a></li>
       </ul>
     </div>
   </div>
@@ -36,7 +35,7 @@ export default {
 <style lang="scss">
 @import '@/assets/scss/__mixin.scss';
 @import '@/assets/scss/__extends.scss';
-// @import '@/assets/scss/__fonts.scss';
+@import '@/assets/scss/__fonts.scss';
 a {
   padding: 30px 0px;
 }
@@ -61,12 +60,12 @@ a {
       display: flex;
       align-items: center;
       img {
-        height: 32px;
+        height: 109px;
+        width: 109px;
       }
       a {
         text-decoration: none;
         color: $navyBlue;
-        font-family: Inter;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
@@ -136,7 +135,7 @@ a {
     }
     &.open {
       @include md {
-        max-height: 114px;
+        max-height: 200px;
       }
     }
     ul {
@@ -148,17 +147,18 @@ a {
       margin: 0px;
       height: 100%;
       justify-content: space-between;
-      width: 300px;
+      gap: 30px;
       @include md {
         flex-direction: column;
         width: 100%;
+        gap: 0px;
       }
       li {
         a {
           padding: 40px 0px;
           text-decoration: none;
           color: $navyBlue;
-          font-family: Inter;
+          font-family: Montserrat;
           font-style: normal;
           font-weight: 500;
           font-size: 18px;
