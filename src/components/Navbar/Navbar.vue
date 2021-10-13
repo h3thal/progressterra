@@ -65,7 +65,7 @@ a {
       }
       a {
         text-decoration: none;
-        color: $navyBlue;
+        color: $text;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
@@ -157,7 +157,7 @@ a {
         a {
           padding: 40px 0px;
           text-decoration: none;
-          color: $navyBlue;
+          color: $text;
           font-family: Montserrat;
           font-style: normal;
           font-weight: 500;
