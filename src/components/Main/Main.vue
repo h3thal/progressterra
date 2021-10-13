@@ -23,7 +23,10 @@ export default {
 
 <style lang="scss">
 @import '@/assets/scss/__extends.scss';
+@import '@/assets/scss/__fonts.scss';
+@import '@/assets/scss/__mixin.scss';
 .main {
+    height: 580px;
     &__inform {
         display: flex;
         flex-direction: column;
@@ -68,7 +71,15 @@ export default {
         }
     }
     &__bg {
-        background-image: url(../assets/hand.png);
+        background-image: url(~@/assets/hand.png);
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 750px;
+        position: absolute;
+        top: 0px;
+        width: 100vw;
+        z-index: -1;
+        right: 0px;
     }
 }
 </style>

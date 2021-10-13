@@ -1,6 +1,7 @@
 <template>
   <Navbar/>
   <Main/>
+  <About/>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
 </template>
@@ -9,13 +10,15 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Navbar from '@/components/Navbar/Navbar.vue'
 import Main from '@/components/Main/Main.vue'
+import About from '@/components/About/About.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     Navbar,
-    Main
+    Main,
+    About
   }
 }
 </script>
