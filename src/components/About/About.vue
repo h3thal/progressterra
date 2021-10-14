@@ -43,6 +43,7 @@ export default {
         }
         .about__block {
           margin-top: 25px;
+          padding-left: 130px;
           &-title {
             font-family: Montserrat;
             font-style: normal;
